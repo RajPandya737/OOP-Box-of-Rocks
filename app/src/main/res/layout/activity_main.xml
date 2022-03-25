@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <!--EXTRA FEATURE: Gif curtains-->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="470dp"
+        android:layout_height="680dp"
+        android:src="@drawable/curtaingif" />
+    <!--Main activity stuff, just a bunch of buttons, colors, and cool fonts-->
+
+    <!--The images that are empty were a part of the animtion type affect (using timer).-->
+    <ImageView
+        android:id="@+id/coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:src="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:padding="30dp"
+        android:src="@drawable/empty" />
+
+    <TextView
+        android:id="@+id/titl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Are You Dumber \nThan a Box o' Rocks?"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#B71C1C"
+            android:fontFamily="cursive"
+            android:onClick="test"
+            android:text="play"
+            android:textSize="30dp"
+
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#B71C1C"
+            android:fontFamily="cursive"
+            android:onClick="practice"
+            android:text="Practice"
+            android:textSize="30dp"
+
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#B71C1C"
+            android:fontFamily="cursive"
+            android:onClick="instructions"
+            android:text="Instructions"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#B71C1C"
+            android:fontFamily="cursive"
+            android:onClick="rate"
+            android:text="Rate"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:padding="70dp"
+            android:paddingTop="300dp"
+            android:paddingEnd="20dp"
+            android:text="      Game by Raj Pandya"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:src="@drawable/empty" />
+
+
+</RelativeLayout>

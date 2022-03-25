@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    android:orientation="vertical">
+    <!--This relative layout holds the 2 images for there amount of wedges-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/RockWedge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="60dp"
+            android:src="@drawable/zerowedge" />
+
+        <ImageView
+            android:id="@+id/HumanWedge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="60dp"
+            android:src="@drawable/zerowedge" />
+
+    </RelativeLayout>
+    <!--this buttons returns the user back to the game screen-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#B898DF"
+        android:onClick="Th"
+        android:text="Return" />
+    <!--This relative layout just holds the 2 characters-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="60dp"
+            android:src="@drawable/rockfigure" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="60dp"
+            android:src="@drawable/participant" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
